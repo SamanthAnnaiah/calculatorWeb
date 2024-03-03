@@ -1,5 +1,4 @@
 function Handlenumpadclick(e, cvalue, setcvalue, setsval, fone, ftwo, fsymbol, sval) {
-    console.log("num pad: ", e.target.textContent);
     let mvalue = e.target.textContent.trim();
     if (
         e.target.classList.contains("calcibutton") &&
@@ -66,7 +65,6 @@ function Handlenumpadclick(e, cvalue, setcvalue, setsval, fone, ftwo, fsymbol, s
         }
         if (mvalue === "=") {
             ftwo.current = cvalue;
-            console.log(document.querySelector(".calcibtns"));
             if (document.querySelector(".calcibtns").textContent.trim()) {
                 ftwo.current = document.querySelector(".calcibtns").textContent.trim();
             }
@@ -86,7 +84,6 @@ function Handlenumpadclick(e, cvalue, setcvalue, setsval, fone, ftwo, fsymbol, s
         switch (symbol) {
             case "+":
                 n3 = Number(n1) + Number(n2);
-                console.log(n3);
                 fone.current = n3.toString();
                 ftwo.current = " ";
                 fsymbol.current = " ";
@@ -94,7 +91,6 @@ function Handlenumpadclick(e, cvalue, setcvalue, setsval, fone, ftwo, fsymbol, s
 
             case "-":
                 n3 = Number(n1) - Number(n2);
-                console.log(n3);
                 fone.current = n3.toString();
                 ftwo.current = " ";
                 fsymbol.current = " ";
@@ -102,7 +98,6 @@ function Handlenumpadclick(e, cvalue, setcvalue, setsval, fone, ftwo, fsymbol, s
 
             case "/":
                 n3 = Number(n1) / Number(n2);
-                console.log(n3);
                 fone.current = n3.toString();
                 ftwo.current = " ";
                 fsymbol.current = " ";
@@ -110,7 +105,6 @@ function Handlenumpadclick(e, cvalue, setcvalue, setsval, fone, ftwo, fsymbol, s
 
             case "x":
                 n3 = Number(n1) * Number(n2);
-                console.log(n3);
                 fone.current = n3.toString();
                 ftwo.current = " ";
                 fsymbol.current = " ";
