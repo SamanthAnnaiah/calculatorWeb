@@ -1,5 +1,13 @@
 import './calcistyle.css';
 
+/* cvalue, setcvalue - The state elements that hold the actual number values 
+   sval, sesval = state elements that control the display of the historical values typed 
+   t1, t2 and t3 - These are the useRef elements that is used to change the theme of the component, the appropriate 
+                    class will be spplied to the component
+   Handlenumpadclick - This is the event handler to the event listener "onClick" 
+   fone - The first value needed for the calculator 
+   ftwo - The second value needed for the calculator 
+   fsymbol - The arithmetic calculation that needs to be done. (/*+-) */
 export function CalciButtons({ cvalue, setcvalue, Handlenumpadclick, sval, setsval, fone, ftwo, fsymbol, t1, t2, t3 }) {
     function Btn({ cont, col = "hsl(30, 18%, 85%)", wid }) {
         return (
